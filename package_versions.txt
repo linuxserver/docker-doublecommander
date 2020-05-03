@@ -24,7 +24,7 @@ debianutils4.8.4
 desktop-file-utils0.23-1ubuntu3.18.04.2
 diffutils1:3.6-1
 dirmngr2.2.4-1ubuntu1.2
-distro-info-data0.37ubuntu0.6
+distro-info-data0.37ubuntu0.7
 docker-ce-cli5:19.03.8~3-0~ubuntu-bionic
 doublecmd-common0.8.2-1
 doublecmd-gtk0.8.2-1
@@ -100,7 +100,7 @@ libc-bin2.27-3ubuntu1
 libcolord21.3.3-2build1
 libcom-err21.44.1-1ubuntu1.3
 libcroco30.6.12-2
-libcups22.2.7-1ubuntu2.7
+libcups22.2.7-1ubuntu2.8
 libcurl47.58.0-2ubuntu3.8
 libdatrie10.2.10-7
 libdb5.35.3.28-13.1ubuntu1.1
@@ -234,8 +234,8 @@ libpulsedsp1:11.1-1ubuntu7.5
 libpython2.72.7.17-1~18.04ubuntu1
 libpython2.7-minimal2.7.17-1~18.04ubuntu1
 libpython2.7-stdlib2.7.17-1~18.04ubuntu1
-libpython3.6-minimal3.6.9-1~18.04
-libpython3.6-stdlib3.6.9-1~18.04
+libpython3.6-minimal3.6.9-1~18.04ubuntu1
+libpython3.6-stdlib3.6.9-1~18.04ubuntu1
 libpython3-stdlib3.6.7-1~18.04
 libpython-stdlib2.7.15~rc1-1
 libreadline77.0-3
@@ -257,7 +257,7 @@ libsepol12.7-1
 libsigsegv22.12-1
 libsm62:1.2.2-1
 libsmartcols12.31.1-0.4ubuntu3.6
-libsmbclient2:4.7.6+dfsg~ubuntu-0ubuntu2.15
+libsmbclient2:4.7.6+dfsg~ubuntu-0ubuntu2.16
 libsnapd-glib11.49-0ubuntu0.18.04.1
 libsndfile11.0.28-4ubuntu0.18.04.1
 libsoup2.4-12.62.1-1ubuntu0.4
@@ -289,7 +289,7 @@ libwayland-client01.16.0-1ubuntu1.1~18.04.3
 libwayland-cursor01.16.0-1ubuntu1.1~18.04.3
 libwayland-egl11.16.0-1ubuntu1.1~18.04.3
 libwayland-server01.16.0-1ubuntu1.1~18.04.3
-libwbclient02:4.7.6+dfsg~ubuntu-0ubuntu2.15
+libwbclient02:4.7.6+dfsg~ubuntu-0ubuntu2.16
 libwebp60.6.1-2
 libwebrtc-audio-processing10.3-1
 libwind0-heimdal7.5.0+dfsg-1
@@ -351,7 +351,7 @@ mount2.31.1-0.4ubuntu3.6
 multiarch-support2.27-3ubuntu1
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
-nodejs12.16.2-1nodesource1
+nodejs12.16.3-1nodesource1
 obconf1:2.0.4+git20150213-2
 openbox3.6.1-7ubuntu0.1
 openssl1.1.1-1ubuntu2.1~18.04.5
@@ -366,8 +366,8 @@ python2.7.15~rc1-1
 python2.72.7.17-1~18.04ubuntu1
 python2.7-minimal2.7.17-1~18.04ubuntu1
 python33.6.7-1~18.04
-python3.63.6.9-1~18.04
-python3.6-minimal3.6.9-1~18.04
+python3.63.6.9-1~18.04ubuntu1
+python3.6-minimal3.6.9-1~18.04ubuntu1
 python3-apt1.6.5ubuntu0.2
 python3-dbus1.2.6-1
 python3-gi3.26.1-2ubuntu1
@@ -377,7 +377,7 @@ python-apt-common1.6.5ubuntu0.2
 python-minimal2.7.15~rc1-1
 python-talloc2.1.10-2ubuntu1
 readline-common7.0-3
-samba-libs2:4.7.6+dfsg~ubuntu-0ubuntu2.15
+samba-libs2:4.7.6+dfsg~ubuntu-0ubuntu2.16
 sed4.4-2
 sensible-utils0.0.12
 shared-mime-info1.9-2
