@@ -25,7 +25,7 @@ desktop-file-utils0.23-1ubuntu3.18.04.2
 diffutils1:3.6-1
 dirmngr2.2.4-1ubuntu1.3
 distro-info-data0.37ubuntu0.9
-docker-ce-cli5:19.03.13~3-0~ubuntu-bionic
+docker-ce-cli5:19.03.14~3-0~ubuntu-bionic
 doublecmd-common0.8.2-1
 doublecmd-gtk0.8.2-1
 doublecmd-plugins0.8.2-1
@@ -405,8 +405,8 @@ xkb-data2.23.1-1ubuntu1.18.04.1
 xorg-sgml-doctools1:1.11-1
 xorgxrdp0.9.5-2
 xrdp0.9.5-2
-xserver-common2:1.19.6-1ubuntu4.7
-xserver-xorg-core2:1.19.6-1ubuntu4.7
+xserver-common2:1.19.6-1ubuntu4.8
+xserver-xorg-core2:1.19.6-1ubuntu4.8
 xterm330-1ubuntu2
 xtrans-dev1.3.5-1
 xutils1:7.7+19ubuntu7.1
