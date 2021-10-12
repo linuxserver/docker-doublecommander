@@ -24,8 +24,8 @@ debianutils4.8.4
 desktop-file-utils0.23-1ubuntu3.18.04.2
 diffutils1:3.6-1
 dirmngr2.2.4-1ubuntu1.4
-distro-info-data0.37ubuntu0.11
-docker-ce-cli5:20.10.8~3-0~ubuntu-bionic
+distro-info-data0.37ubuntu0.12
+docker-ce-cli5:20.10.9~3-0~ubuntu-bionic
 doublecmd-common0.8.2-1
 doublecmd-gtk0.8.2-1
 doublecmd-plugins0.8.2-1
