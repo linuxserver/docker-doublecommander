@@ -18,7 +18,7 @@ jobs:
           fi
           echo "**** External trigger running off of master branch. To disable this trigger, set a Github secret named \"PAUSE_EXTERNAL_TRIGGER_DOUBLECOMMANDER_MASTER\". ****"
           echo "**** Retrieving external version ****"
-          EXT_RELEASE=$(curl -sX GET http://archive.ubuntu.com/ubuntu/dists/bionic/universe/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: doublecmd-gtk' | awk -F ': ' '/Version/{print $2;exit}')
+          EXT_RELEASE=$(curl -sX GET http://archive.ubuntu.com/ubuntu/dists/focal/universe/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: doublecmd-gtk' | awk -F ': ' '/Version/{print $2;exit}')
           if [ -z "${EXT_RELEASE}" ] || [ "${EXT_RELEASE}" == "null" ]; then
             echo "**** Can't retrieve external version, exiting ****"
             FAILURE_REASON="Can't retrieve external version for doublecommander branch master"
