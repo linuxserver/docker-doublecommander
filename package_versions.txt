@@ -276,7 +276,7 @@ libsepol13.0-1
 libsigsegv22.12-2
 libsm62:1.2.3-1
 libsmartcols12.34-0.1ubuntu9.1
-libsmbclient2:4.13.14+dfsg-0ubuntu0.20.04.4
+libsmbclient2:4.13.17~dfsg-0ubuntu0.21.04.1
 libsnapd-glib11.58-0ubuntu0.20.04.0
 libsndfile11.0.28-7ubuntu0.1
 libsoup2.4-12.70.0-1
@@ -314,7 +314,7 @@ libwayland-client01.18.0-1
 libwayland-cursor01.18.0-1
 libwayland-egl11.18.0-1
 libwayland-server01.18.0-1
-libwbclient02:4.13.14+dfsg-0ubuntu0.20.04.4
+libwbclient02:4.13.17~dfsg-0ubuntu0.21.04.1
 libwebp60.6.1-2ubuntu0.20.04.1
 libwebrtc-audio-processing10.3.1-0ubuntu3
 libwind0-heimdal7.7.0+dfsg-1ubuntu1
@@ -377,7 +377,7 @@ mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.1
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-nodejs14.18.3-deb-1nodesource1
+nodejs14.19.0-deb-1nodesource1
 obconf1:2.0.4+git20150213-2
 openbox3.6.1-9ubuntu0.20.04.1
 openssh-client1:8.2p1-4ubuntu0.4
@@ -416,7 +416,7 @@ python3-urllib31.25.8-2ubuntu0.1
 python-apt-common2.0.0ubuntu0.20.04.6
 python-is-python22.7.17-4
 readline-common8.0-4
-samba-libs2:4.13.14+dfsg-0ubuntu0.20.04.4
+samba-libs2:4.13.17~dfsg-0ubuntu0.21.04.1
 sed4.7-1
 sensible-utils0.0.12+nmu1
 shared-mime-info1.15-1
