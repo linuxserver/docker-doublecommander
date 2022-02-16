@@ -44,5 +44,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "15.02.21:", desc: "Rebase to Ubuntu Jammy." }
   - { date: "14.12.21:", desc: "Rebase to Ubuntu focal." }
   - { date: "25.03.20:", desc: "Initial release." }

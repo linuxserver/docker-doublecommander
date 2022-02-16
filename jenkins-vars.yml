@@ -2,8 +2,7 @@
 
 # jenkins variables
 project_name: docker-doublecommander
-external_type: na
-custom_version_command: "curl -sX GET http://archive.ubuntu.com/ubuntu/dists/focal/universe/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: doublecmd-gtk' | awk -F ': ' '/Version/{print $2;exit}'"
+external_type: os
 release_type: stable
 release_tag: latest
 ls_branch: master
