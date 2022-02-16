@@ -99,14 +99,12 @@ pipeline {
     /* ########################
        External Release Tagging
        ######################## */
-    // If this is a custom command to determine version use that command
-    stage("Set tag custom bash"){
+    // If this is an os release set release type to none to indicate no external release
+    stage("Set ENV os"){
       steps{
         script{
-          env.EXT_RELEASE = sh(
-            script: ''' curl -sX GET http://archive.ubuntu.com/ubuntu/dists/focal/universe/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: doublecmd-gtk' | awk -F ': ' '/Version/{print $2;exit}' ''',
-            returnStdout: true).trim()
-            env.RELEASE_LINK = 'custom_command'
+          env.EXT_RELEASE = env.PACKAGE_TAG
+          env.RELEASE_LINK = 'none'
         }
       }
     }
@@ -909,11 +907,11 @@ pipeline {
              "tagger": {"name": "LinuxServer Jenkins","email": "jenkins@linuxserver.io","date": "'${GITHUB_DATE}'"}}' '''
         echo "Pushing New release for Tag"
         sh '''#! /bin/bash
-              echo "Updating to ${EXT_RELEASE_CLEAN}" > releasebody.json
+              echo "Updating base packages to ${PACKAGE_TAG}" > releasebody.json
               echo '{"tag_name":"'${META_TAG}'",\
                      "target_commitish": "master",\
                      "name": "'${META_TAG}'",\
-                     "body": "**LinuxServer Changes:**\\n\\n'${LS_RELEASE_NOTES}'\\n\\n**Remote Changes:**\\n\\n' > start
+                     "body": "**LinuxServer Changes:**\\n\\n'${LS_RELEASE_NOTES}'\\n\\n**OS Changes:**\\n\\n' > start
               printf '","draft": false,"prerelease": false}' >> releasebody.json
               paste -d'\\0' start releasebody.json > releasebody.json.done
               curl -H "Authorization: token ${GITHUB_TOKEN}" -X POST https://api.github.com/repos/${LS_USER}/${LS_REPO}/releases -d @releasebody.json.done'''
