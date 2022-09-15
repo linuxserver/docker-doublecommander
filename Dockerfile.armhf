@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:arm32v7-jammy-f5e8ed1d-ls35
+FROM ghcr.io/linuxserver/baseimage-rdesktop-web:arm32v7-jammy
 
 # set version label
 ARG BUILD_DATE
@@ -9,6 +9,8 @@ LABEL maintainer="thelamer"
 
 # title
 ENV TITLE=DoubleCommander
+
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install packages ****" && \
