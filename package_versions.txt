@@ -24,7 +24,7 @@ desktop-file-utils0.26-1ubuntu3
 diffutils1:3.8-0ubuntu2
 dirmngr2.2.27-3ubuntu2.1
 distro-info-data0.52ubuntu0.2
-docker-ce-cli5:20.10.22~3-0~ubuntu-bionic
+docker-ce-cli5:20.10.23~3-0~ubuntu-bionic
 doublecmd-common1.0.5-1
 doublecmd-gtk1.0.5-1
 doublecmd-plugins1.0.5-1
@@ -272,7 +272,7 @@ libsepol23.3-1build1
 libsigsegv22.13-1ubuntu3
 libsm62:1.2.3-1build2
 libsmartcols12.37.2-4ubuntu3
-libsmbclient2:4.15.9+dfsg-0ubuntu0.3
+libsmbclient2:4.15.13+dfsg-0ubuntu1
 libsnapd-glib11.60-0ubuntu1
 libsndfile11.0.31-2build1
 libsoup2.4-12.74.2-3
@@ -312,7 +312,7 @@ libwayland-client01.20.0-1ubuntu0.1
 libwayland-cursor01.20.0-1ubuntu0.1
 libwayland-egl11.20.0-1ubuntu0.1
 libwayland-server01.20.0-1ubuntu0.1
-libwbclient02:4.15.9+dfsg-0ubuntu0.3
+libwbclient02:4.15.13+dfsg-0ubuntu1
 libwebp71.2.2-2
 libwebrtc-audio-processing10.3.1-0ubuntu5
 libwinpr2-22.6.1+dfsg1-3ubuntu2.3
@@ -423,7 +423,7 @@ python3-ldb2:2.4.4-0ubuntu0.1
 python3-minimal3.10.6-1~22.04
 python3-more-itertools8.10.0-2
 python3-oauthlib3.2.0-1ubuntu0.1
-python3-pkg-resources59.6.0-1.2
+python3-pkg-resources59.6.0-1.2ubuntu0.22.04.1
 python3-pyparsing2.4.7-1
 python3-secretstorage3.3.1-1
 python3-six1.16.0-3ubuntu1
@@ -433,7 +433,7 @@ python3-wadllib1.3.6-1
 python3-zipp1.0.0-3
 python-apt-common2.4.0
 readline-common8.1.2-1
-samba-libs2:4.15.9+dfsg-0ubuntu0.3
+samba-libs2:4.15.13+dfsg-0ubuntu1
 sed4.8-1ubuntu2
 sensible-utils0.0.17
 session-migration0.3.6
