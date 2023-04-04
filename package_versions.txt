@@ -23,7 +23,7 @@ NAME                                VERSION                                  TYP
 @tootallnate/once                   2.0.0                                    npm        
 @types/cookie                       0.4.1                                    npm        
 @types/cors                         2.8.13                                   npm        
-@types/node                         18.15.10                                 npm        
+@types/node                         18.15.11                                 npm        
 GClient                             1.2.0                                    npm        
 PyGObject                           3.42.1                                   python     
 PyJWT                               2.3.0                                    python     
@@ -128,7 +128,7 @@ diffutils                           1:3.8-0ubuntu2                           deb
 dirmngr                             2.2.27-3ubuntu2.1                        deb        
 distro                              1.7.0                                    python     
 distro-info-data                    0.52ubuntu0.2                            deb        
-docker-ce-cli                       5:23.0.1-1~ubuntu.18.04~bionic           deb        
+docker-ce-cli                       5:23.0.2-1~ubuntu.18.04~bionic           deb        
 doublecmd-common                    1.0.5-1                                  deb        
 doublecmd-gtk                       1.0.5-1                                  deb        
 doublecmd-plugins                   1.0.5-1                                  deb        
@@ -374,7 +374,7 @@ libksba8                            1.6.0-2ubuntu0.2                         deb
 liblcms2-2                          2.12~rc1-2build2                         deb        
 libldap-2.5-0                       2.5.14+dfsg-0ubuntu0.22.04.1             deb        
 libldap-common                      2.5.14+dfsg-0ubuntu0.22.04.1             deb        
-libldb2                             2:2.4.4-0ubuntu0.22.04.1                 deb        
+libldb2                             2:2.4.4-0ubuntu0.22.04.2                 deb        
 libllvm15                           1:15.0.6-3~ubuntu0.22.04.2               deb        
 liblmdb0                            0.9.24-1build2                           deb        
 liblocale-gettext-perl              1.07-4build3                             deb        
@@ -434,8 +434,8 @@ libprocps8                          2:3.3.17-6ubuntu2                        deb
 libproxy1v5                         0.4.17-2                                 deb        
 libpsl5                             0.21.0-1.2build2                         deb        
 libpthread-stubs0-dev               0.4-1build2                              deb        
-libpulse0                           1:15.99.1+dfsg1-1ubuntu2                 deb        
-libpulsedsp                         1:15.99.1+dfsg1-1ubuntu2                 deb        
+libpulse0                           1:15.99.1+dfsg1-1ubuntu2.1               deb        
+libpulsedsp                         1:15.99.1+dfsg1-1ubuntu2.1               deb        
 libpython2-stdlib                   2.7.18-3                                 deb        
 libpython2.7-minimal                2.7.18-13ubuntu1.1                       deb        
 libpython2.7-stdlib                 2.7.18-13ubuntu1.1                       deb        
@@ -461,7 +461,7 @@ libsepol2                           3.3-1build1                              deb
 libsigsegv2                         2.13-1ubuntu3                            deb        
 libsm6                              2:1.2.3-1build2                          deb        
 libsmartcols1                       2.37.2-4ubuntu3                          deb        
-libsmbclient                        2:4.15.13+dfsg-0ubuntu1                  deb        
+libsmbclient                        2:4.15.13+dfsg-0ubuntu1.1                deb        
 libsnapd-glib1                      1.60-0ubuntu1                            deb        
 libsndfile1                         1.0.31-2build1                           deb        
 libsoup2.4-1                        2.74.2-3                                 deb        
@@ -500,7 +500,7 @@ libwayland-client0                  1.20.0-1ubuntu0.1                        deb
 libwayland-cursor0                  1.20.0-1ubuntu0.1                        deb        
 libwayland-egl1                     1.20.0-1ubuntu0.1                        deb        
 libwayland-server0                  1.20.0-1ubuntu0.1                        deb        
-libwbclient0                        2:4.15.13+dfsg-0ubuntu1                  deb        
+libwbclient0                        2:4.15.13+dfsg-0ubuntu1.1                deb        
 libwebp7                            1.2.2-2                                  deb        
 libwebrtc-audio-processing1         0.3.1-0ubuntu5                           deb        
 libwinpr2-2                         2.6.1+dfsg1-3ubuntu2.3                   deb        
@@ -668,8 +668,8 @@ promise-retry                       2.0.1                                    npm
 promzard                            0.3.0                                    npm        
 proxy-addr                          2.0.7                                    npm        
 publicsuffix                        20211207.1025-1                          deb        
-pulseaudio                          1:15.99.1+dfsg1-1ubuntu2                 deb        
-pulseaudio-utils                    1:15.99.1+dfsg1-1ubuntu2                 deb        
+pulseaudio                          1:15.99.1+dfsg1-1ubuntu2.1               deb        
+pulseaudio-utils                    1:15.99.1+dfsg1-1ubuntu2.1               deb        
 pyparsing                           2.4.7                                    python     
 python                              2.7.18                                   binary     
 python                              3.10.6                                   binary     
@@ -695,7 +695,7 @@ python3-keyring                     23.5.0-1                                 deb
 python3-launchpadlib                1.10.16-1                                deb        
 python3-lazr.restfulclient          0.14.4-1                                 deb        
 python3-lazr.uri                    1.0.6-2                                  deb        
-python3-ldb                         2:2.4.4-0ubuntu0.22.04.1                 deb        
+python3-ldb                         2:2.4.4-0ubuntu0.22.04.2                 deb        
 python3-minimal                     3.10.6-1~22.04                           deb        
 python3-more-itertools              8.10.0-2                                 deb        
 python3-oauthlib                    3.2.0-1ubuntu0.1                         deb        
@@ -729,7 +729,7 @@ rimraf                              3.0.2                                    npm
 safe-buffer                         5.1.2                                    npm        
 safe-buffer                         5.2.1                                    npm        
 safer-buffer                        2.1.2                                    npm        
-samba-libs                          2:4.15.13+dfsg-0ubuntu1                  deb        
+samba-libs                          2:4.15.13+dfsg-0ubuntu1.1                deb        
 sed                                 4.8-1ubuntu2                             deb        
 semver                              6.3.0                                    npm        
 semver                              7.3.7                                    npm        
@@ -824,8 +824,8 @@ xkb-data                            2.33-1                                   deb
 xorg-sgml-doctools                  1:1.11-1.1                               deb        
 xorgxrdp                            1:0.2.17-1build1                         deb        
 xrdp                                0.9.17-2ubuntu2                          deb        
-xserver-common                      2:21.1.3-2ubuntu2.8                      deb        
-xserver-xorg-core                   2:21.1.3-2ubuntu2.8                      deb        
+xserver-common                      2:21.1.3-2ubuntu2.9                      deb        
+xserver-xorg-core                   2:21.1.3-2ubuntu2.9                      deb        
 xserver-xorg-video-amdgpu           22.0.0-1ubuntu0.1                        deb        
 xserver-xorg-video-ati              1:19.1.0-2ubuntu1                        deb        
 xserver-xorg-video-intel            2:2.99.917+git20210115-1                 deb        
