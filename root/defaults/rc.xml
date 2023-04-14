@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_config xmlns="http://openbox.org/3.4/rc"
+                xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+  <!-- Set the default window focus mode to "click" -->
+  <focus>
+    <focusNew>yes</focusNew>
+    <followMouse>no</followMouse>
+    <focusLast>yes</focusLast>
+    <raiseOnFocus>no</raiseOnFocus>
+    <underMouse>no</underMouse>
+  </focus>
+  
+  <!-- Set the desktop layout to a 2x2 grid -->
+  <desktops>
+    <number>4</number>
+    <names>1 2 3 4</names>
+    <popupTime>0.3</popupTime>
+    <popupOnTop>no</popupOnTop>
+    <followViewport>yes</followViewport>
+    <geometry>
+      <width>2</width>
+      <height>2</height>
+    </geometry>
+  </desktops>
+  
+  <!-- Set keybindings for launching applications -->
+  <keybind key="W-space">
+    <action name="Execute">
+      <command>rofi -show drun</command>
+    </action>
+  </keybind>
+  <keybind key="W-t">
+    <action name="Execute">
+      <command>urxvt</command>
+    </action>
+  </keybind>
+  
+  <!-- Remove all keybindings for window manipulation -->
+  <!--
+  <keybind key="A-Left">
+    <action name="UnmaximizeFull"/>
+    <action name="MoveResizeTo">
+      <x>0</x>
+      <y>0</y>
+      <width>50%</width>
+      <height>100%</height>
+    </action>
+  </keybind>
+  <keybind key="A-Right">
+    <action name="UnmaximizeFull"/>
+    <action name="MoveResizeTo">
+      <x>-0</x>
+      <y>0</y>
+      <width>50%</width>
+      <height>100%</height>
+    </action>
+  </keybind>
+  -->
+  
+</openbox_config>

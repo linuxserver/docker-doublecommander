@@ -1,0 +1,4 @@
+#!/usr/bin/execlineb -P
+
+s6-echo "Starting Google Chrome"
+s6-supervise /run/s6/services/chrome

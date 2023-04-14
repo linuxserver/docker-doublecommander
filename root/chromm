@@ -1,0 +1,1 @@
+nohup bash /usr/bin/google-chrome-stable  --no-first-run   --no-sandbox   --password-store=basic    --start-maximized   --test-typype > /dev/null 2>&1 &
