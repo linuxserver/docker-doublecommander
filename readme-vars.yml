@@ -7,31 +7,26 @@ project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/ma
 project_blurb: "[Double Commander]({{ project_url }}) is a free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: false
-
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
+  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings." }
-  - { vol_path: "/data", vol_host_path: "/path/to/data", desc: "Host data directories, mount as many as needed." }
+  - {vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings."}
+  - {vol_path: "/data", vol_host_path: "/path/to/data", desc: "Host data directories, mount as many as needed."}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "3000", internal_port: "3000", port_desc: "Double Commander desktop gui." }
-  - { external_port: "3001", internal_port: "3001", port_desc: "Double Commander desktop gui HTTPS." }
-
+  - {external_port: "3000", internal_port: "3000", port_desc: "Double Commander desktop gui."}
+  - {external_port: "3001", internal_port: "3001", port_desc: "Double Commander desktop gui HTTPS."}
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -69,11 +64,11 @@ app_setup_block: |
   ### Lossless mode
 
   This container is capable of delivering a true lossless image at a high framerate to your web browser by changing the Stream Quality preset to "Lossless", more information [here](https://www.kasmweb.com/docs/latest/how_to/lossless.html#technical-background). In order to use this mode from a non localhost endpoint the HTTPS port on 3001 needs to be used. If using a reverse proxy to port 3000 specific headers will need to be set as outlined [here](https://github.com/linuxserver/docker-baseimage-kasmvnc#lossless).
-
 # changelog
 changelogs:
-  - { date: "18.03.23:", desc: "Rebase to KasmVNC base image." }
-  - { date: "16.09.22:", desc: "Migrate to s6v3." }
-  - { date: "15.02.21:", desc: "Rebase to Ubuntu Jammy." }
-  - { date: "14.12.21:", desc: "Rebase to Ubuntu focal." }
-  - { date: "25.03.20:", desc: "Initial release." }
+  - {date: "05.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
+  - {date: "18.03.23:", desc: "Rebase to KasmVNC base image."}
+  - {date: "16.09.22:", desc: "Migrate to s6v3."}
+  - {date: "15.02.21:", desc: "Rebase to Ubuntu Jammy."}
+  - {date: "14.12.21:", desc: "Rebase to Ubuntu focal."}
+  - {date: "25.03.20:", desc: "Initial release."}
