@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntujammy
+FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
 
 # set version label
 ARG BUILD_DATE
@@ -13,6 +13,10 @@ ENV TITLE=DoubleCommander
 ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
+  echo "**** add icon ****" && \
+  curl -o \
+    /kclient/public/icon.png \
+    https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-logo.png && \
   echo "**** install packages ****" && \
   apt-get update && \
   apt-get install -y \
