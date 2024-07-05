@@ -20,10 +20,16 @@ RUN \
   echo "**** install packages ****" && \
   apt-get update && \
   apt-get install -y \
+    arj \
     doublecmd-gtk \
     doublecmd-plugins \
     libsmbclient \
-    libssh2-1 && \
+    libssh2-1 \
+    libunrar5 \
+    p7zip-full \
+    unace \
+    xz-utils \
+    zpaq && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \
