@@ -327,6 +327,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.07.24:** - Add rar, 7zip, ace, and arj archive support.
 * **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon, rebase to bookworm.
 * **05.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 * **18.03.23:** - Rebase to KasmVNC base image.
