@@ -48,6 +48,7 @@ apt                                                                           2.
 apt-transport-https                                                           2.6.1                                   deb                          
 apt-utils                                                                     2.6.1                                   deb                          
 archy                                                                         1.0.0                                   npm                          
+arj                                                                           3.10.22-26                              deb                          
 array-flatten                                                                 1.1.1                                   npm                          
 async                                                                         3.2.5                                   npm                          
 at-spi2-common                                                                2.46.0-5                                deb                          
@@ -1000,6 +1001,7 @@ libudev1                                                                      25
 libudfread0                                                                   1.1.2-1                                 deb                          
 libunbound8                                                                   1.17.1-2+deb12u2                        deb                          
 libunistring2                                                                 1.0-2                                   deb                          
+libunrar5                                                                     1:6.2.6-1+deb12u1                       deb                          
 libunwind8                                                                    1.6.2-3                                 deb                          
 libusb-1.0-0                                                                  2:1.0.26-1                              deb                          
 libutempter0                                                                  1.2.1-3                                 deb                          
@@ -1155,6 +1157,8 @@ openbox                                                                       3.
 openssh-client                                                                1:9.2p1-2+deb12u2                       deb                          
 openssl                                                                       3.0.13-1~deb12u1                        deb                          
 p-map                                                                         4.0.0                                   npm                          
+p7zip                                                                         16.02+dfsg-8                            deb                          
+p7zip-full                                                                    16.02+dfsg-8                            deb                          
 packagekit                                                                    1.2.6-5                                 deb                          
 pacote                                                                        18.0.3                                  npm                          
 parse-conflict-json                                                           3.0.1                                   npm                          
@@ -1286,6 +1290,7 @@ type-is                                                                       1.
 tzdata                                                                        2024a-0+deb12u1                         deb                          
 ucf                                                                           3.0043+nmu1                             deb                          
 udev                                                                          252.26-1~deb12u2                        deb                          
+unace                                                                         1.2b-23                                 deb                          
 undici-types                                                                  5.26.5                                  npm                          
 unique-filename                                                               3.0.0                                   npm                          
 unique-slug                                                                   4.0.0                                   npm                          
@@ -1331,5 +1336,7 @@ xserver-xorg-video-qxl                                                        0.
 xserver-xorg-video-radeon                                                     1:19.1.0-3                              deb                          
 xterm                                                                         379-1                                   deb                          
 xutils                                                                        1:7.7+23                                deb                          
+xz-utils                                                                      5.4.1-0.2                               deb                          
 yallist                                                                       4.0.0                                   npm                          
 zlib1g                                                                        1:1.2.13.dfsg-1                         deb                          
+zpaq                                                                          7.15+repack-1                           deb                          
