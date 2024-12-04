@@ -40,11 +40,72 @@ app_setup_block: |
 
   * http://yourhost:3000/
   * https://yourhost:3001/
-
+# init diagram
+init_diagram: |
+  "doublecommander:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-kasmvnc-end -> init-config
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    init-os-end -> init-kasmvnc
+    init-nginx -> init-kasmvnc-config
+    init-video -> init-kasmvnc-end
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    init-kasmvnc -> init-nginx
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-kasmvnc-config -> init-video
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-de
+    svc-nginx -> svc-de
+    svc-de -> legacy-services
+    init-services -> svc-docker
+    svc-de -> svc-docker
+    svc-docker -> legacy-services
+    init-services -> svc-kasmvnc
+    svc-pulseaudio -> svc-kasmvnc
+    svc-kasmvnc -> legacy-services
+    init-services -> svc-kclient
+    svc-kasmvnc -> svc-kclient
+    svc-kclient -> legacy-services
+    init-services -> svc-nginx
+    svc-kclient -> svc-nginx
+    svc-nginx -> legacy-services
+    init-services -> svc-pulseaudio
+    svc-pulseaudio -> legacy-services
+  }
+  Base Images: {
+    "baseimage-kasmvnc:debianbookworm" <- "baseimage-debian:bookworm"
+  }
+  "doublecommander:latest" <- Base Images
 # changelog
 changelogs:
-  - {date: "05.07.24:", desc: "Add rar, 7zip, ace, and arj archive support." }
-  - {date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon, rebase to bookworm." }
+  - {date: "05.07.24:", desc: "Add rar, 7zip, ace, and arj archive support."}
+  - {date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon, rebase to bookworm."}
   - {date: "05.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "18.03.23:", desc: "Rebase to KasmVNC base image."}
   - {date: "16.09.22:", desc: "Migrate to s6v3."}
