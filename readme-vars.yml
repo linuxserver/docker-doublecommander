@@ -6,7 +6,7 @@ project_url: "https://doublecmd.sourceforge.io/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png"
 project_blurb: "[Double Commander]({{ project_url }}) is a free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-project_categories: "Administration|Storage"
+project_categories: "Administration,Storage"
 project_blurb_optional_extras_enabled: false
 # supported architectures
 available_architectures:
