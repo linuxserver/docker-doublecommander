@@ -8,7 +8,8 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 # title
-ENV TITLE=DoubleCommander
+ENV TITLE=DoubleCommander \
+    NO_GAMEPAD=true
 
 ARG DEBIAN_FRONTEND="noninteractive"
 

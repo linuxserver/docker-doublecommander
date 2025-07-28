@@ -103,6 +103,7 @@ init_diagram: |
   "doublecommander:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "28.07.25:", desc: "Fix CPU usage bug by disabling fake udev."}
   - {date: "12.07.25:", desc: "Rebase to Selkies, HTTPS IS NOW REQUIRED."}
   - {date: "05.07.24:", desc: "Add rar, 7zip, ace, and arj archive support."}
   - {date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon, rebase to bookworm."}
