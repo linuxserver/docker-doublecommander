@@ -230,6 +230,7 @@ services:
     ports:
       - 3000:3000
       - 3001:3001
+    shm_size: "1gb"
     restart: unless-stopped
 ```
 
@@ -245,6 +246,7 @@ docker run -d \
   -p 3001:3001 \
   -v /path/to/config:/config \
   -v /path/to/data:/data \
+  --shm-size="1gb" \
   --restart unless-stopped \
   lscr.io/linuxserver/doublecommander:latest
 ```
@@ -262,6 +264,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-v /config` | Users home directory in the container, stores program settings. |
 | `-v /data` | Host data directories, mount as many as needed. |
+| `--shm-size=` | Recommended for all desktop images. |
 
 ## Environment variables from files (Docker secrets)
 
@@ -425,6 +428,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **22.09.25:** - Rebase to Debian Trixie.
 * **28.07.25:** - Fix CPU usage bug by disabling fake udev.
 * **12.07.25:** - Rebase to Selkies, HTTPS IS NOW REQUIRED.
 * **05.07.24:** - Add rar, 7zip, ace, and arj archive support.
