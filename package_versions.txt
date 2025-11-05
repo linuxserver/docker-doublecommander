@@ -3,7 +3,7 @@ NAME                                                                          VE
 adduser                                                                       3.152                                   deb                         
 adwaita-icon-theme                                                            48.1-1                                  deb                         
 aiohappyeyeballs                                                              2.6.1                                   python                      
-aiohttp                                                                       3.13.1                                  python                      
+aiohttp                                                                       3.13.2                                  python                      
 aioice                                                                        0.10.1                                  python                      
 aiosignal                                                                     1.4.0                                   python                      
 apt                                                                           3.0.3                                   deb                         
@@ -72,7 +72,7 @@ dnspython                                                                     2.
 docker-buildx-plugin                                                          0.29.1-1~debian.13~trixie               deb                         
 docker-ce                                                                     5:28.5.1-1~debian.13~trixie             deb                         
 docker-ce-cli                                                                 5:28.5.1-1~debian.13~trixie             deb                         
-docker-compose-plugin                                                         2.40.2-1~debian.13~trixie               deb                         
+docker-compose-plugin                                                         2.40.3-1~debian.13~trixie               deb                         
 doublecmd-common                                                              1.1.22-1                                deb                         
 doublecmd-gtk                                                                 1.1.22-1                                deb                         
 doublecmd-plugins                                                             1.1.22-1                                deb                         
@@ -152,7 +152,8 @@ github.com/checkpoint-restore/go-criu/v6                                      v6
 github.com/cilium/ebpf                                                        v0.17.3                                 go-module  (+1 duplicate)   
 github.com/cilium/ebpf                                                        v0.9.1                                  go-module  (+3 duplicates)  
 github.com/cloudflare/cfssl                                                   v1.6.4                                  go-module                   
-github.com/compose-spec/compose-go/v2                                         v2.9.0                                  go-module  (+1 duplicate)   
+github.com/compose-spec/compose-go/v2                                         v2.9.0                                  go-module                   
+github.com/compose-spec/compose-go/v2                                         v2.9.1                                  go-module                   
 github.com/container-storage-interface/spec                                   v1.5.0                                  go-module                   
 github.com/containerd/accelerated-container-image                             v1.3.0                                  go-module                   
 github.com/containerd/aufs                                                    v1.0.0                                  go-module                   
@@ -205,7 +206,7 @@ github.com/docker/cli                                                         v2
 github.com/docker/cli                                                         v28.5.1+incompatible                    go-module                   
 github.com/docker/cli-docs-tool                                               v0.10.0                                 go-module  (+1 duplicate)   
 github.com/docker/cli/cmd/docker                                              UNKNOWN                                 go-module                   
-github.com/docker/compose/v2                                                  v0.0.0-20251022173216-6007d4c7e7b7      go-module                   
+github.com/docker/compose/v2                                                  v0.0.0-20251030091458-49b1c1e932ae      go-module                   
 github.com/docker/distribution                                                v2.8.3+incompatible                     go-module  (+1 duplicate)   
 github.com/docker/docker                                                      v28.4.0+incompatible                    go-module                   
 github.com/docker/docker                                                      v28.5.1                                 go-module  (+1 duplicate)   
@@ -1076,8 +1077,8 @@ xfonts-encodings                                                              1:
 xfonts-utils                                                                  1:7.7+7                                 deb                         
 xkb-data                                                                      2.42-1                                  deb                         
 xsel                                                                          1.2.1-1                                 deb                         
-xserver-common                                                                2:21.1.16-1.3                           deb                         
-xserver-xorg-core                                                             2:21.1.16-1.3                           deb                         
+xserver-common                                                                2:21.1.16-1.3+deb13u1                   deb                         
+xserver-xorg-core                                                             2:21.1.16-1.3+deb13u1                   deb                         
 xserver-xorg-video-amdgpu                                                     23.0.0-1                                deb                         
 xserver-xorg-video-ati                                                        1:22.0.0-1                              deb                         
 xserver-xorg-video-intel                                                      2:2.99.917+git20210115-1                deb                         
@@ -1087,7 +1088,7 @@ xserver-xorg-video-radeon                                                     1:
 xsettingsd                                                                    1.0.2-1                                 deb                         
 xterm                                                                         398-1                                   deb                         
 xutils                                                                        1:7.7+24                                deb                         
-xvfb                                                                          2:21.1.16-1.3                           deb                         
+xvfb                                                                          2:21.1.16-1.3+deb13u1                   deb                         
 xz-utils                                                                      5.8.1-1                                 deb                         
 yarl                                                                          1.22.0                                  python                      
 zipp                                                                          3.19.2                                  python                      
