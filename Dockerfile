@@ -11,7 +11,8 @@ LABEL maintainer="thelamer"
 
 # title
 ENV TITLE=DoubleCommander \
-    NO_GAMEPAD=true
+    NO_GAMEPAD=true \
+    PIXELFLUX_WAYLAND=true
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
